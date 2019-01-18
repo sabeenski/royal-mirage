@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import lightswitchReducer from './lightswitchReducer'
+// import lightswitchReducer from './lightswitchReducer'
 
 export default combineReducers({
- 	  lightswitchReducer,
+ 	  // lightswitchReducer,
 })
