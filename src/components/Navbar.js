@@ -5,7 +5,7 @@ class Navbar extends Component {
     return ( 
       <div>
         <div className="nav-wrapper">
-          <a href="#">Logo</a>
+          <a href="/">Logo</a>
           <ul>
             <li>Home</li>
             <li>Jobs</li>

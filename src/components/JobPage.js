@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
+import './JobPage.css'
+
+
 class JobPage extends Component {
   state = {  }
   render() { 
+
     return ( 
-      <div className="job-page container">
+      <div className="job-page">
         <h1>Purchasing Assistant</h1>
         <div className="job-details">
           <h2>Job Description</h2>
@@ -21,7 +26,7 @@ class JobPage extends Component {
           <li>Accurate and “hands-on” mentality </li>
           <li>Flexible and output focused on high quality output </li>
           <li>Open communicator, well with people</li>
-          <button>Apply Now</button>
+          <Link to= {'/purchasing-assistant'}><button>Apply Now</button></Link>
           <img src="images/folder.svg" alt="folder"/>
           <p>Share this job</p>
           <div className="social-media">
@@ -35,11 +40,11 @@ class JobPage extends Component {
           <div className="more-jobs">
             <h4>Other Jobs in retail</h4>
             <div className="new-position">
-              <h6>Retail Area Manager</h6>
+              <h4>Retail Area Manager</h4>
               <p>Antwerp, Belgium</p>
             </div>
             <div className="not-found">
-              <h6>Nothing Found</h6>
+              <h4>Nothing Found</h4>
               <p>Sign up for a Career Alert</p>
             </div>
           </div>
