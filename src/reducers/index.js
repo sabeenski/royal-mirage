@@ -3,4 +3,5 @@ import { combineReducers } from 'redux'
 
 export default combineReducers({
  	  // lightswitchReducer,
+ 	  lightswitchReducer1,
 })
