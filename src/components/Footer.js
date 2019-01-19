@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import './Footer.css'
+
+
 class Footer extends Component {
   state = {  }
   render() { 
@@ -18,22 +21,12 @@ class Footer extends Component {
             <li>Private Policy</li>
             <li>Contact</li>
           </div>
-          <div className="col-3">
+          <div className="social-media">
             <h5>Follow us</h5>
-            <div className="media-1">
-              <li>Newsletter</li>
-              <li>Instagram</li>
-              <li>Twitter</li>
-              <li>Tumblr</li>
-              <li>LinkedIn</li>
-            </div>
-            <div className="media-2">
-              <li>Facebook</li>
-              <li>Pinterest</li>
-              <li>YouTube</li>
-              <li>Google+</li>
-            </div>
-
+                <i className="fab fa-twitter"></i>
+                <i className="fab fa-facebook-f"></i>
+                <i className="fab fa-linkedin-in"></i>
+                <i className="fab fa-instagram"></i>
           </div>
           <div className="col-4">
             <h5>Job Alert</h5>

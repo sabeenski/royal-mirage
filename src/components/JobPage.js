@@ -26,7 +26,7 @@ class JobPage extends Component {
           <li>Accurate and “hands-on” mentality </li>
           <li>Flexible and output focused on high quality output </li>
           <li>Open communicator, well with people</li>
-          <Link to= {'/purchasing-assistant'}><button>Apply Now</button></Link>
+          <Link to= {'/careers/purchasing-assistant'}><button className="button-cta">Apply Now</button></Link>
           <img src="images/folder.svg" alt="folder"/>
           <p>Share this job</p>
           <div className="social-media">
