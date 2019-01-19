@@ -77,13 +77,13 @@ class JobForm extends Component {
             </div>
             <div className="job-form-col-4">
               <p>Attach your documents (pdf, doc(x), txt, rtf max.4Mb)</p>
-              <p>Resume* <button className="upload-btn">UPLOAD</button>
+              <p>Resume* 
+                {/* <button className="upload-btn">UPLOAD</button> */}
               <input type="file" id="file" name="file" value={this.state.file} accept=".doc,.docx,.txt,.pdf,.rtf" onChange={this.handleChange} required />
               <button>DROPBOX</button></p>
               <input type="checkbox"/>Send me a copy 
               {!this.state.file && <button className="button-cta" type="submit">APPLY FOR THIS JOB</button>}
               {this.state.file && <Link to={'purchasing-assistant/application-successful'}><button className="button-cta" type="submit">APPLY FOR THIS JOB</button></Link>}
-
               <p>{this.state.firstName}</p>
               <p>{this.state.lastName}</p>
               <p>{this.state.emailAddress}</p>
