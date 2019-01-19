@@ -1,0 +1,39 @@
+.navbar ul{
+  background-color: #3C3B41;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 55px;
+  position: fixed;
+  width: 100%;
+  
+}
+
+.navbar li{
+  float: right;  
+  margin: 15px 60px 15px 0px;
+  color: white;
+  list-style: none;;
+}
+
+.navbar li:hover{
+  color: #D200BD;
+}
+
+.navbar .logo{
+  color: #D200BD;
+  text-transform: uppercase;
+  margin-left: 45px;
+  margin-top: 10px;
+  font-weight: bold
+
+}
+.navbar li:checked{
+  color:blue
+}
+
+
+.Searchbox{
+  width: 15%;
+  text-align: center
+}
+

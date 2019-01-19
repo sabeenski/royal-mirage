@@ -1,3 +1,40 @@
-body {
-  /* background-color: #DDC56A */
+
+
+.job-page{
+  margin: 20px  20px  
 }
+
+ .job-details li::before {
+  content: "\2022";
+  color: #D200BD;
+  margin-right: 10px
+}
+
+.job-details li{
+  list-style: none;
+
+}
+
+.social-media i{
+  border: solid 1px;
+  border-radius: 50px;
+  background-color: gray;
+  padding: 15px;
+  margin: 5px;
+  color: white;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+button .apply{
+  margin-left: 80px
+}
+.social-media i:hover{
+  color: rgb(214, 159, 209)
+}
+
+
+  

@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
+import './Navbar.css'
+
+
 class Navbar extends Component {
   state = {  }
   render() { 
     return ( 
       <div>
-        <div className="nav-wrapper">
-          <a href="/">Logo</a>
+        <div className="navbar">
           <ul>
-            <li>Home</li>
-            <li>Jobs</li>
-            <li>About</li>
-            <li>Departments</li>
-            <li>Contact</li>
-            <li><input type="box" placeholder="Search for jobs by keyboard"></input></li>
+            {/* <li><input type="box" placeholder="Search for jobs" /></li> */}
+            <Link to={'/'}><li>Contact</li></Link>
+            <Link to={'/'}><li>Departments</li></Link>
+            <Link to={'/'}><li>About</li></Link>
+            <Link to={'/'}><li>Jobs</li></Link>
+            <Link to={'/'}><li>Home</li></Link> 
+            <Link to={'/'}><p className="logo">Royal Mirage</p></Link>       
           </ul>
         </div>
         <img src="images/open-jobs-IT.jpg" alt="jobs" width="100%"/>
