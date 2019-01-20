@@ -64,9 +64,9 @@ class JobForm extends Component {
                 <p>Personal details*</p>
                 <input type="text" minLength="2" maxLength="50" placeholder="First Name" name="firstName" title="2 characters minimum"value={this.state.firstName} onChange={this.handleChange}required/>
                 <br/><input type="text" minLength="2" maxLength="50" placeholder="Last Name" name="lastName" value={this.state.lastName} onChange={this.handleChange}required/>
-                <br/><input type="email" minLength="2" maxLength="50" placeholder="Email address" name="emailAddress" value={this.state.emailAddress} onChange={this.handleChange}required/>
+                <br/><input type="email" minLength="2" maxLength="50" placeholder="Email Address" name="emailAddress" value={this.state.emailAddress} onChange={this.handleChange}required/>
                 <br/><input type="text" minLength="2" maxLength="50" placeholder="Home Address" name="address" value ={this.state.address} onChange={this.handleChange}required/>
-                <br/><input type="number" placeholder="House number" name="houseNumber" value={this.state.houseNumber} onChange={this.handleChange} required/ >
+                <br/><input type="number" placeholder="House Number" name="houseNumber" value={this.state.houseNumber} onChange={this.handleChange} required/ >
                 <br/><input type="tel" minLength="5" maxLength="20" pattern="^[0-9\(\)\s+-]+$" placeholder="Zip Code" name="zipCode" value={this.state.zipCode} onChange={this.handleChange} required/ >
               </div>
                 <br/><span id="gender">Sex: </span><input type="radio" name="sex" value={this.state.sex} onChange={this.handleClick1} required/><span>Male<input type="radio" name="sex" value={this.state.sex} onChange={this.handleClick2} required/>Female</span>
@@ -85,13 +85,10 @@ class JobForm extends Component {
                 <br/>
                 {/* <button>DROPBOX</button> */}
                 </p>
-                <input type="checkbox" required/>Yes, I agree to the <a href="#">privacy statement.*</a>
+                <input type="checkbox" required/>Send me a copy!
                 {!this.state.file && <button className="button-cta" type="submit">APPLY</button>}
                 {this.state.file && <Link to={'purchasing-assistant/application-successful'}><button className="button-cta" type="submit">APPLY</button></Link>}
-                <p>{this.state.firstName}</p>
-                <p>{this.state.lastName}</p>
-                <p>{this.state.emailAddress}</p>
-                <p>{this.state.phoneNumber}</p>
+            
               </div>
             </form>
         </div>

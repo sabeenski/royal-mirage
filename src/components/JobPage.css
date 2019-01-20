@@ -37,5 +37,17 @@ button .apply{
   color: rgb(214, 159, 209)
 }
 
+.department-info{
+  border: dashed #D200BD 1px;
+  /* margin: 10px 500px 10px 10px; */
+  text-align: center;
+  padding-bottom: 15px; 
+}
+.FAQ{
+  border: dashed #D200BD 1px;
+  margin-top: 20px ;
+  text-align: center;
+  padding-bottom: 15px
 
-  
+}
+
