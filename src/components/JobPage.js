@@ -9,7 +9,7 @@ class JobPage extends Component {
 
     return ( 
       <div className="job-page">
-        <h1>Purchasing Assistant</h1>
+        <h1 className="job-position">Purchasing Assistant</h1>
         <div className="job-details">
           <h2>Job Description</h2>
             <p>
@@ -27,15 +27,14 @@ class JobPage extends Component {
           <li>Flexible and output focused on high quality output </li>
           <li>Open communicator, well with people</li>
           <Link to= {'/careers/purchasing-assistant'}><button className="button-cta">Apply Now</button></Link>
-          <img src="images/folder.svg" alt="folder"/>
           <p>Share this job</p>
           <div className="social-media">
-            <i className="fab fa-twitter"></i>
-            <i className="fab fa-facebook-f"></i>
-            <i className="fab fa-linkedin-in"></i>
-            <i className="fab fa-google-plus-g"></i>
-            <i className="far fa-envelope"></i>
-            <i className="fas fa-print"></i>
+            <a href="https://twitter.com/" target="_blank"><i className="fab fa-twitter"></i></a>
+            <a href="https://facebook.com/" target="_blank"><i className="fab fa-facebook-f"></i></a>
+            <a href="https://linkedin.com/" target="_blank"><i className="fab fa-linkedin-in"></i></a>
+            <a href="https://google.com/" target="_blank"><i className="fab fa-google-plus-g"></i></a>
+            <a href="https://gmail.com/" target="_blank"><i className="far fa-envelope"></i></a>
+            <i className="fas fa-print" onClick={window.print}></i>
           </div>
           <div className="more-jobs">
             <h4>Other Jobs in retail</h4>
