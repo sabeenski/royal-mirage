@@ -36,8 +36,8 @@
 } */
 
 body{
-  text-align: justify;
   font-family: 'Lato';
+  background-color: #F5F5F5
   /* position: relative; */
 }
 
@@ -52,12 +52,43 @@ button{
   
 }
 
+
 .button-cta{
-  background-color: #D200BD;
+
   margin: 15px 0px 0px 50px;
-  box-shadow: 0px 3px 0px grey, 0px 3px 15px rgba(0,0,0,.4);
-  /* width: 15% */
+  background-color: #D200BD;
+  box-shadow: 3px 5px #3B3B41;
+  padding: 0 20px;
+  height: 45px;
+  border: 1px solid;
+  text-align: center;
+  font-size: 16px;
+  line-height: 45px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 15px;
+  font-weight: bold;
+  color: white
 }
+
+
+/* .button-cta{
+  display: inline-block;
+  padding: 0 20px;
+  height: 45px;
+  border: 1px #D450BD solid;
+  background-color: #D200BD;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  line-height: 45px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 15px;
+  box-shadow: 0px 3px 0px grey, 0px 3px 15px rgba(0,0,0,.4);
+
+} */
+
 
 html, body {
   max-width: 100%;

@@ -1,42 +1,98 @@
-.container{
+.container-1{
   margin: 50px;
+  text-align: center;
 }
 
-div form {
+
+::placeholder {
+    font-size: 15px;
 }
-
- 
-
 
 .job-form-col-1 input{
-    background: #fff;
-    padding: 0 10px;
-    color: #63656A;
-    border-radius: 5px;
-    height: 40px;
-    width: 20%; 
-    margin: 4px 10px 4px 0px;
+  background: #fff;
+  padding: 0 10px;
+  color: #63656A;
+  border-radius: 5px;
+  height: 40px;
+  width: 30%; 
+  margin: 4px 10px 4px 0px;
+  font-size: 15px;
+  display: inline-block
+
 } 
+.job-form-col-1 input:invalid, .job-form-col-2 input:invalid {
+  border-right-color: red;
+}
+.job-form-col-1 input:valid, .job-form-col-2 input:valid {
+  border-right-color: green;
+}
+
+.job-intro{
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  color: #D450BD;
+  margin-top: 40px
+}
+
+.job-position{
+  font-size: 25px;
+  color: #3B3B41; 
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
 
 .job-form-col-2 input{
-    background: #fff;
-    padding: 0 10px;
-    color: #63656A;
-    border-radius: 5px;
-    height: 40px;
-    width: 20%; 
-    margin: 4px 10px 4px 0px
+  background: #fff;
+  padding: 0 10px;
+  color: #63656A;
+  border-radius: 5px;
+  height: 40px;
+  width: 22.5%; 
+  margin: 4px 10px 4px 0px;
+  font-size: 15px;
 } 
 
-/* #file-upload {
-  border: solid 1px;
-  height: 40px ;
-  background-color: lightblue;
+
+input[type=file]{
+  width:0;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0; 
+}
+
+
+
+#file-upload{
+  display: inline-block;
+  padding: 0 20px;
+  height: 45px;
+  border: 1px #D450BD solid;
+  background-color: white;
+  color: #D450BD;
+  text-align: center;
   font-size: 16px;
+  line-height: 45px;
   border-radius: 10px;
   cursor: pointer;
-  margin: 5px; 
-} */
+  margin-left: 15px;
+}
+
+#file-upload:hover{
+  background-color: lightblue;
+}
+
+#file-name{
+  color: green;
+  margin-left: 10px;
+  display: inline;
+
+}
+
 
 #motivation-box{
   background: #fff;
@@ -45,7 +101,8 @@ div form {
   border-radius: 5px;
   margin: 4px 10px 4px 0px;
   height: 100px;
-  width: 25%;
+  width: 30%;
+  font-size: 15px;
 }
 
 /* .job-form-col-3 .upload-btn{
@@ -58,7 +115,7 @@ div form {
 
 } */
 
-.job-form-col-3 input #file-upload{
+/* .job-form-col-3 input #file-upload{
   border: solid 1px;
   height: 40px ;
   background-color: lightblue;
@@ -66,4 +123,4 @@ div form {
   border-radius: 10px;
   cursor: pointer;
   margin: 5px;
-}
+} */

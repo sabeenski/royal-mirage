@@ -1,7 +1,8 @@
 
 
 .job-page{
-  margin: 20px  20px  
+  margin: 20px  50px;
+  text-align: justify
 }
 
  .job-details li::before {
@@ -36,5 +37,17 @@ button .apply{
   color: rgb(214, 159, 209)
 }
 
+.department-info{
+  border: dashed #D200BD 1px;
+  /* margin: 10px 500px 10px 10px; */
+  text-align: center;
+  padding-bottom: 15px; 
+}
+.FAQ{
+  border: dashed #D200BD 1px;
+  margin-top: 20px ;
+  text-align: center;
+  padding-bottom: 15px
 
-  
+}
+
