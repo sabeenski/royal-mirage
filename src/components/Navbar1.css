@@ -1,0 +1,148 @@
+/* .navbar ul{
+  background-color: #3C3B41;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 55px;
+  position: fixed;
+  width: 100%;
+  
+}
+
+.navbar li{
+  float: right;  
+  margin: 15px 60px 15px 0px;
+  color: white;
+  list-style: none;;
+}
+
+.navbar li:hover{
+  color: #D200BD;
+}
+
+.navbar .logo{
+  color: #D200BD;
+  text-transform: uppercase;
+  margin-left: 45px;
+  margin-top: 10px;
+  font-weight: bold;
+  position: fixed;
+  } */
+
+/* NOT SURE ABOUT THIS: */
+/* .navbar li:checked{
+  color:blue
+} */
+
+
+.navbar ul{
+  background-color: #3C3B41;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 55px;
+  position: fixed;
+  width: 100%;
+  
+}
+
+.navbar li{
+  float: left;  
+  margin: 15px 0px 15px 160px;
+  color: white;
+  list-style: none;;
+}
+
+.navbar li:hover{
+  color: #4DAABC;
+}
+
+.navbar .logo{
+  color: #4DAABC;
+  text-transform: uppercase;
+  margin-left: 45px;
+  margin-top: 10px;
+  font-weight: bold;
+  position: fixed;
+  text-decoration: none 
+  }
+
+  /* .navbar .logo a{
+    text-decoration: none 
+  } */
+
+  /* Hamburger menu for mobile screens */
+/* @media screen and (max-width: 960px){
+  #burger-nav{
+    display: block;
+    height: 45px;
+    width: 100%;
+    background: url('/images/burger.png') no-repeat 8% center;
+    background-color: #3C3B41;
+    cursor: pointer;
+  }
+
+  
+
+  .navbar ul.open{
+    height: auto;
+    position: fixed;
+  }
+
+  
+
+  .navbar ul.close{
+    overflow: hidden;
+    background-color: #3C3B41;
+    height:0
+    }
+
+  
+  .navbar li {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: white;
+  } 
+
+  .navbar .logo{
+     height: 0;
+     overflow: hidden;
+
+    }
+
+} */
+
+
+/* Slide-in menu trial */
+
+@media screen and (max-width: 960px){
+  #burger-nav{
+    display: block;
+    height: 45px;
+    width: 100%;
+    background: url('/images/burger.png') no-repeat 8% center;
+    background-color: #3C3B41;
+    cursor: pointer;
+  }
+
+  .navbar ul.open{
+    width: 260px;
+    height: auto;
+    text-align: left;
+    
+  }
+
+  .container ul.open{
+    margin-left: 250px
+  }
+
+  .logo{
+    display: none
+  }
+
+  .navbar ul.close{
+    overflow: hidden;
+    background-color: #3C3B41;
+    height:0
+    }
+}
