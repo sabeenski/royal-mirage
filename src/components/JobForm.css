@@ -31,7 +31,7 @@
   text-transform: uppercase;
   font-size: 50px;
   text-align: center;
-  color: #D450BD;
+  color: #4DAABC;
   margin-top: 40px
 }
 
@@ -71,9 +71,9 @@ input[type=file]{
   display: inline-block;
   padding: 0 20px;
   height: 45px;
-  border: 1px #D450BD solid;
+  border: 1px #4DAABC solid;
   background-color: white;
-  color: #D450BD;
+  color: #4DAABC;
   text-align: center;
   font-size: 16px;
   line-height: 45px;
@@ -84,6 +84,7 @@ input[type=file]{
 
 #file-upload:hover{
   background-color: lightblue;
+  color: white;
 }
 
 #file-name{

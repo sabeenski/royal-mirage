@@ -7,7 +7,7 @@
 
  .job-details li::before {
   content: "\2022";
-  color: #D200BD;
+  color: #4DAABC;
   margin-right: 10px
 }
 
@@ -34,17 +34,17 @@ button .apply{
   margin-left: 80px
 }
 .social-media i:hover{
-  color: rgb(214, 159, 209)
+  color: rgb(90, 184, 202)
 }
 
 .department-info{
-  border: dashed #D200BD 1px;
+  border: dashed #4DAABC 1px;
   /* margin: 10px 500px 10px 10px; */
   text-align: center;
   padding-bottom: 15px; 
 }
 .FAQ{
-  border: dashed #D200BD 1px;
+  border: dashed #4DAABC 1px;
   margin-top: 20px ;
   text-align: center;
   padding-bottom: 15px
