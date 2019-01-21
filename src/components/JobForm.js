@@ -82,7 +82,7 @@ class JobForm extends Component {
               </div>
                 <br/><span id="gender">Sex: </span><input type="radio" name="sex" value={this.state.sex} onChange={this.handleClick1} required/><label>Male</label><input type="radio" name="sex" value={this.state.sex} onChange={this.handleClick2} required/><label for>Female</label>
               <div className="job-form-col-2">
-                <br/><label>Date of Birth: <input type="date" placeholder="Date of birth" name="dateOfBirth" value={this.state.birth} onChange={this.handleChange} required/></label>
+                <br/><label>Date of Birth: <input type="date" placeholder="dd/mm/yyyy" name="dateOfBirth" value={this.state.birth} onChange={this.handleChange} required/></label>
               </div>
               <div className="job-form-col-3">
                 <p>Your motivation*</p>
@@ -96,7 +96,7 @@ class JobForm extends Component {
                 <br/>
                 {/* <button>DROPBOX</button> */}
                 </p>
-                <input type="checkbox" required/>I agree to the <p><Link to={'/'}> privacy statement.* </Link></p>
+                <input type="checkbox" required/>I agree to the <span><Link to={'/'}> privacy statement.* </Link></span>
                 <button className="button-cta" type="submit" onClick={this.handleClick3}>APPLY</button>
 
                 {this.state.applicationSent && <ThankYouPage />}
