@@ -5,6 +5,7 @@
   margin-top: 100px;
   display: flex;
   text-align: center;
+  overflow: hidden;
 
   /* position: absolute; */
   width: 100%;
@@ -28,4 +29,23 @@ h5 {
 
 }
 
+
+
+@media screen and (max-width: 960px){
+  .footer-box{
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+}
+/* @media screen and (max-width: 960px){
+  .footer-box{
+    width: 100%;
+    float: left;
+    margin: 0
+}
+
+}  */
 

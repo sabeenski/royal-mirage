@@ -12,7 +12,8 @@
   float: right;  
   margin: 15px 60px 15px 0px;
   color: white;
-  list-style: none;;
+  list-style: none;
+  font-weight: 600
 }
 
 .navbar li:hover{
