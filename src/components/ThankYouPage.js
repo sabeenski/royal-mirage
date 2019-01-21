@@ -7,18 +7,20 @@ class ThankYouPage extends Component {
   render() { 
     console.log("hello")
     return ( 
-      <div>
-        <div className="thankyou">
-          <p>Dear applicant!
-            <br/> Thank you for your application to the position of Purchasing Assistant! 
+      <div className="modal">
+        <div className="modal-content">
+          <h3>Dear applicant,</h3>
+            <br/> <p> You have successfully applied to the position of Purchasing Assistant! 
             <br/> We have received your application and we will be processing it soon. 
-            <br/> In the mean time, follow us on our social media if you are interested in keeping yourself updated about us.
+            <br/> In the mean time, feel free to follow us on our social media to keep yourself updated about us.</p>
+            <h3>Thank You for applying!</h3>
+          <p>
+            <br/>
+             <span>Best Regards,
+                Team Royal Mirage</span>
           </p>
-          <p>Best Regards,
-            Team ....
-          </p>
+          <Link to={'/'}><button className="go-back"> Go Back</button></Link>
         </div>
-        <div className="go-back"> <Link to={'/'}>Go Back</Link></div>
 
       </div>
      );

@@ -1,6 +1,6 @@
 
 
-.job-page{
+.job-page {
   margin: 20px  50px;
   text-align: justify
 }
@@ -11,12 +11,12 @@
   margin-right: 10px
 }
 
-.job-details li{
+.job-details li {
   list-style: none;
 
 }
 
-.social-media i{
+.social-media i {
   border: solid 1px;
   border-radius: 50px;
   background-color: gray;
@@ -30,20 +30,14 @@
   
 }
 
-button .apply{
+button .apply {
   margin-left: 80px
 }
-.social-media i:hover{
+.social-media i:hover {
   color: rgb(90, 184, 202)
 }
 
-.department-info{
-  border: dashed #4DAABC 1px;
-  /* margin: 10px 500px 10px 10px; */
-  text-align: center;
-  padding-bottom: 15px; 
-}
-.FAQ{
+.FAQ {
   border: dashed #4DAABC 1px;
   margin-top: 20px ;
   text-align: center;

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './JobForm.css'
 import { Link } from 'react-router-dom'
+import ThankYouPage from './ThankYouPage';
+
 
 
 class JobForm extends Component {
@@ -14,7 +16,9 @@ class JobForm extends Component {
     zipCode:'',
     houseNumber:'',
     motivationLetter:'',
-    file:''
+    file:'',
+    applicationSent: false
+
   }
 
   handleChange = (e) => {
@@ -34,6 +38,11 @@ class JobForm extends Component {
     })
   }
 
+  handleClick3 = (e) => {
+    if(!this.state.file) alert('Please check all the required fields are filled up!')
+
+  }
+
   handleSubmit = (e) => {
 
     e.preventDefault()
@@ -47,8 +56,10 @@ class JobForm extends Component {
       zipCode:'',
       houseNumber:'',
       motivationLetter:'',
-      file:''
+      file:'',
+      applicationSent: true
     })
+  
   }
 
    
@@ -69,7 +80,7 @@ class JobForm extends Component {
                 <br/><input type="number" placeholder="House Number" name="houseNumber" value={this.state.houseNumber} onChange={this.handleChange} required/ >
                 <br/><input type="tel" minLength="5" maxLength="20" pattern="^[0-9\(\)\s+-]+$" placeholder="Zip Code" name="zipCode" value={this.state.zipCode} onChange={this.handleChange} required/ >
               </div>
-                <br/><span id="gender">Sex: </span><input type="radio" name="sex" value={this.state.sex} onChange={this.handleClick1} required/><span>Male<input type="radio" name="sex" value={this.state.sex} onChange={this.handleClick2} required/>Female</span>
+                <br/><span id="gender">Sex: </span><input type="radio" name="sex" value={this.state.sex} onChange={this.handleClick1} required/><label>Male</label><input type="radio" name="sex" value={this.state.sex} onChange={this.handleClick2} required/><label for>Female</label>
               <div className="job-form-col-2">
                 <br/><label>Date of Birth: <input type="date" placeholder="Date of birth" name="dateOfBirth" value={this.state.birth} onChange={this.handleChange} required/></label>
               </div>
@@ -85,10 +96,11 @@ class JobForm extends Component {
                 <br/>
                 {/* <button>DROPBOX</button> */}
                 </p>
-                <input type="checkbox" required/>Send me a copy!
-                {!this.state.file && <button className="button-cta" type="submit">APPLY</button>}
-                {this.state.file && <Link to={'purchasing-assistant/application-successful'}><button className="button-cta" type="submit">APPLY</button></Link>}
-            
+                <input type="checkbox" required/>I agree to the <p><Link to={'/'}> privacy statement.* </Link></p>
+                <button className="button-cta" type="submit" onClick={this.handleClick3}>APPLY</button>
+
+                {this.state.applicationSent && <ThankYouPage />}
+
               </div>
             </form>
         </div>

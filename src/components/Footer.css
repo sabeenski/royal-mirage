@@ -6,11 +6,7 @@
   display: flex;
   text-align: center;
   overflow: hidden;
-
-  /* position: absolute; */
   width: 100%;
-
-
 }
 
 .footer-box div {
@@ -18,7 +14,7 @@
   margin-left: 100px;
 }
 
-.footer-box li{
+.footer-box li {
   list-style: none;
   padding-bottom: 13px
 }
@@ -36,16 +32,6 @@ h5 {
     width: 100%;
     display: inline-block;
     overflow: hidden;
+  }
 }
-
-
-}
-/* @media screen and (max-width: 960px){
-  .footer-box{
-    width: 100%;
-    float: left;
-    margin: 0
-}
-
-}  */
 
