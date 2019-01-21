@@ -36,24 +36,7 @@ class JobPage extends Component {
             <a href="https://gmail.com/" target="_blank"><i className="far fa-envelope"></i></a>
             <i className="fas fa-print" onClick={window.print}></i>
           </div>
-          {/* <div className="more-jobs">
-            <h4>Other Jobs in retail</h4>
-            <div className="new-position">
-              <h4>Retail Area Manager</h4>
-              <p>Antwerp, Belgium</p>
-            </div>
-            <div className="not-found">
-              <h4>Nothing Found</h4>
-              <p>Sign up for a Career Alert</p>
-            </div>
-          </div> */}
         </div>
-
-        {/* <div className="department-info">
-          <h3>About the department</h3>
-          <p>Our department unites multiple disciplines with the shared goal of best servicing our stores around the globe.</p>
-          <a href="#">Continue Reading</a>
-        </div> */}
         <div className="FAQ">
           <h3>F.A.Q</h3>
           <p>Want to know more about the application process? Have more questions? </p>
