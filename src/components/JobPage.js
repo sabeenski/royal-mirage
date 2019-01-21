@@ -4,7 +4,7 @@ import './JobPage.css'
 
 
 class JobPage extends Component {
-  state = {  }
+  
   render() { 
 
     return ( 
