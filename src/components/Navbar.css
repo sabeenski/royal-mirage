@@ -14,6 +14,7 @@
   color: white;
   list-style: none;
   font-weight: 600;
+  text-transform: uppercase
 }
 
 .navbar li:hover, .navbar li:active {
@@ -41,7 +42,6 @@
     display: block;
     height: 45px;
     width: 100%;
-    /* background-color: red; */
     cursor: pointer;
     background: url('/images/burger.png') no-repeat 15% center;
     
@@ -81,9 +81,13 @@
     text-transform: uppercase;
     font-weight: 800;
     position: relative;
-
+    text-decoration: #4DAABC underline 
   } 
   
+  
+
+
+
   .navbar .logo {
      height: 0px;
      text-align: center;
