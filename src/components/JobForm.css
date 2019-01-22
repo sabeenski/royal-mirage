@@ -20,11 +20,9 @@
   display: inline-block
 
 } 
-.job-form-col-1 input:invalid, .job-form-col-2 input:invalid {
-  border-right-color: red;
-}
+
 .job-form-col-1 input:valid, .job-form-col-2 input:valid {
-  border-right-color: green;
+  border: solid 1px green;
 }
 
 .job-intro {
@@ -54,6 +52,12 @@
   margin: 4px 10px 4px 0px;
   font-size: 15px;
 } 
+
+.errorMsg {
+  font-size: 12px;
+  color: red;
+}
+
 
 
 input[type=file] {
