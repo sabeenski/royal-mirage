@@ -28,7 +28,7 @@ class Navbar extends Component {
               <Link to={'/'}><li onClick={this.handleClick}>Home</li></Link>
             </ul>
           </nav>
-          <img src="images/open-jobs-IT.jpg" alt="jobs" width="100%"/>
+          <img src="images/open-jobs-IT.jpg" alt="IT-jobs-royal-mirage" width="100%"/>
 
       </div>
 

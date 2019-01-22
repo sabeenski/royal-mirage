@@ -17,14 +17,44 @@ class JobForm extends Component {
     houseNumber:'',
     motivationLetter:'',
     file:'',
-    applicationSent: false
-
+    applicationSent: false,
+    errors:{}
   }
+
+  validateForm = () => {
+    if(this.state.firstName.length <= 0){
+      this.state.errors.firstName = "Please enter minimum 2 characters."
+    } else this.state.errors.firstName = ''
+
+    if(this.state.lastName.length <= 0){
+      this.state.errors.lastName = "Please enter minimum 2 characters."
+    } else this.state.errors.lastName = ''
+    
+
+    if(this.state.emailAddress.includes('@')){
+      this.state.errors.emailAddress = ''
+    } else this.state.errors.emailAddress = 'Please enter a valid email address.'
+
+    if(this.state.address.length <= 0){
+      this.state.errors.address = "Please enter minimum 2 characters."
+    } else this.state.errors.address = ''
+
+    if(this.state.houseNumber.length <= 0){
+      this.state.errors.houseNumber = "Please enter minimum 2 numeric characters."
+    } else this.state.errors.houseNumber = ''
+
+    if(this.state.zipCode.length <= 3 ){
+      this.state.errors.zipCode = "Please enter minimum 5 numeric characters."
+    } else this.state.errors.zipCode = ''
+    
+  }
+
 
   handleChange = (e) => {
     this.setState({
-      [e.target.name] : e.target.value
+      [e.target.name] : e.target.value     
     })
+    this.validateForm()
   }
 
   handleClick1 = (e) => {
@@ -32,6 +62,7 @@ class JobForm extends Component {
       sex:'Male'
     })
   }
+
   handleClick2 = (e) => {
     this.setState({
       sex:'Female'
@@ -59,12 +90,14 @@ class JobForm extends Component {
       file:'',
       applicationSent: true
     })
+
+
   
   }
 
    
   render() { 
-    console.log(this.state)
+    console.log(this.state.firstName)
     return (  
       <div className="container">
         <h2 className="job-intro">Apply for</h2>
@@ -72,22 +105,39 @@ class JobForm extends Component {
         <div className="container-1">
             <form onSubmit={this.handleSubmit}>
               <div className="job-form-col-1">
+
                 <p>Personal details*</p>
-                <input type="text" minLength="2" maxLength="50" placeholder="First Name" name="firstName" title="2 characters minimum"value={this.state.firstName} onChange={this.handleChange}required/>
-                <br/><input type="text" minLength="2" maxLength="50" placeholder="Last Name" name="lastName" value={this.state.lastName} onChange={this.handleChange}required/>
-                <br/><input type="email" minLength="2" maxLength="50" placeholder="Email Address" name="emailAddress" value={this.state.emailAddress} onChange={this.handleChange}required/>
+                <input type="text" minLength="2" maxLength="50" placeholder="First Name" name="firstName" title="2 characters minimum"value={this.state.firstName} onChange={this.handleChange} required/>
+                <div className="errorMsg">{this.state.errors.firstName}</div>
+
+                <br/><input type="text" minLength="2" maxLength="50" placeholder="Last Name"  name="lastName" value={this.state.lastName} onChange={this.handleChange}required/>
+                <div className="errorMsg">{this.state.errors.lastName}</div>
+
+                <br/><input type="email" placeholder="Email Address" name="emailAddress" value={this.state.emailAddress} onChange={this.handleChange}required/>
+                <div className="errorMsg">{this.state.errors.emailAddress}</div>
+
                 <br/><input type="text" minLength="2" maxLength="50" placeholder="Home Address" name="address" value ={this.state.address} onChange={this.handleChange}required/>
-                <br/><input type="number" placeholder="House Number" name="houseNumber" value={this.state.houseNumber} onChange={this.handleChange} required/ >
-                <br/><input type="tel" minLength="5" maxLength="20" pattern="^[0-9\(\)\s+-]+$" placeholder="Zip Code" name="zipCode" value={this.state.zipCode} onChange={this.handleChange} required/ >
+                <div className="errorMsg">{this.state.errors.address}</div>
+
+                <br/><input type="number" minLength="2" placeholder="House Number" name="houseNumber" value={this.state.houseNumber} onChange={this.handleChange} required/ >
+                <div className="errorMsg">{this.state.errors.houseNumber}</div>
+
+                <br/><input type="number" minLength="5" maxLength="20" placeholder="Zip Code" name="zipCode" value={this.state.zipCode} onChange={this.handleChange} required/ >
+                <div className="errorMsg">{this.state.errors.zipCode}</div>
+
               </div>
-                <br/><span id="gender">Sex: </span><input type="radio" name="sex" value={this.state.sex} onChange={this.handleClick1} required/><label>Male</label><input type="radio" name="sex" value={this.state.sex} onChange={this.handleClick2} required/><label for>Female</label>
+
+              <br/><span id="gender">Sex: </span><input type="radio" name="sex" value={this.state.sex} onChange={this.handleClick1} required/><label>Male</label><input type="radio" name="sex" value={this.state.sex} onChange={this.handleClick2} required/><label for>Female</label>
+              
               <div className="job-form-col-2">
                 <br/><label>Date of Birth: <input type="date" placeholder="dd/mm/yyyy" name="dateOfBirth" value={this.state.birth} onChange={this.handleChange} required/></label>
               </div>
+              
               <div className="job-form-col-3">
                 <p>Your motivation*</p>
                 <textarea id="motivation-box" rows="4" cols="50" placeholder="Write a short motivation letter. Max 300 words." name="motivationLetter" value={this.state.motivationLetter} onChange={this.handleChange} maxLength="300" required></textarea>
               </div>
+              
               <div className="job-form-col-4">
                 <p>Attach your documents (pdf, doc(x), txt, rtf max.4Mb)</p>
                 <p>Upload your resume* 

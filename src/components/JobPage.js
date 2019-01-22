@@ -38,7 +38,7 @@ class JobPage extends Component {
           </div>
         </div>
         <div className="FAQ">
-          <h3>F.A.Q</h3>
+          <h3 style={{fontSize:'30px'}}>F.A.Q</h3>
           <p>Want to know more about the application process? Have more questions? </p>
           <a href="#">Click here to explore more</a>
         </div>
