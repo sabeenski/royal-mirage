@@ -116,10 +116,10 @@ class JobForm extends Component {
                 <br/><input type="text" minLength="2" maxLength="50" placeholder="Home Address" name="address" value ={this.state.address} onChange={this.handleChange}required/>
                 <div className="errorMsg">{this.state.errors.address}</div>
 
-                <br/><input type="number" minLength="2" placeholder="House Number" name="houseNumber" value={this.state.houseNumber} onChange={this.handleChange} required/ >
+                <br/><input type="tel" minLength="2" placeholder="House Number" name="houseNumber" value={this.state.houseNumber} onChange={this.handleChange} required/ >
                 <div className="errorMsg">{this.state.errors.houseNumber}</div>
 
-                <br/><input type="number" minLength="5" maxLength="20" placeholder="Zip Code" name="zipCode" value={this.state.zipCode} onChange={this.handleChange} required/ >
+                <br/><input type="tel" minLength="5" maxLength="20" placeholder="Zip Code" name="zipCode" value={this.state.zipCode} onChange={this.handleChange} required/ >
                 <div className="errorMsg">{this.state.errors.zipCode}</div>
 
               </div>
