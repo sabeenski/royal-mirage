@@ -45,3 +45,11 @@ button .apply {
 
 }
 
+@media screen and (max-width:960px) {
+
+  .job-page {
+    text-align: initial;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
