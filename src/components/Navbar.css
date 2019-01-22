@@ -1,25 +1,24 @@
-.navbar ul {
+.navbar {
   background-color: #3C3B41;
   margin-top: 0px;
   margin-bottom: 0px;
   height: 55px;
   position: fixed;
-  width: 100%;
-  
+  width: 100%;  
+  display: flex;
 }
 
 .navbar li {
-  float: right;  
-  margin: 15px 60px 15px 0px;
+  float: left;   
+  margin: 3px 40px;
   color: white;
   list-style: none;
-  font-weight: 600
+  font-weight: 600;
 }
 
-.navbar li:hover {
+.navbar li:hover, .navbar li:active {
   color: #4DAABC;
 }
-
 
 .navbar .logo {
   color: #4DAABC;
@@ -32,7 +31,9 @@
   font-size: 25px
 }
 
-
+.spacer{
+  flex: 1
+}
 
 
 @media screen and (max-width: 960px) {
@@ -40,37 +41,41 @@
     display: block;
     height: 45px;
     width: 100%;
-    background-color: whitesmoke;
+    /* background-color: red; */
     cursor: pointer;
-    background: url('/images/burger.png') no-repeat 8% center;
+    background: url('/images/burger.png') no-repeat 15% center;
     
   }
 
+  .navbar ul {
+    transform: translateX(-100%);
+
+  }
   .navbar ul.open {
     height: 100vh;
-    background-color: #3B3B41;
+    top: 35px;
+    background-color: whitesmoke;
     position: absolute;
     overflow-y: hidden;
     width: 100%;
-    transition:  .30s ease-in-out;
+    transform: translateX(0);
+    transition: transform .50s ease-out;
     overscroll-behavior: contain;
     position: absolute;
-    float: right;
-    /* overscroll-behavior-y */
   }
 
   .navbar ul.close {
     overflow: hidden;
-    height:0
+    height:0;
     }
 
   
   .navbar li {
     width: 100%;
-    margin-top: 36px;
+    margin-top: 90px;
     display: block;
-    text-align: center;
-    color: white;
+    text-align: left;
+    color: #3C3B41;
     transition: 0.3s;
     font-size: 25px;
     text-transform: uppercase;
@@ -84,7 +89,7 @@
      text-align: center;
      margin-left: 4px;
      overflow: hidden;
-  }
+  } 
 
   
 }

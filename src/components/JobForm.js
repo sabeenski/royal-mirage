@@ -90,9 +90,6 @@ class JobForm extends Component {
       file:'',
       applicationSent: true
     })
-
-
-  
   }
 
    
