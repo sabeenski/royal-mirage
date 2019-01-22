@@ -1,9 +1,12 @@
 
 
 .job-page {
-  margin: 20px  50px;
-  text-align: justify
+  margin: 30px  120px;
+  text-align: justify;
+
 }
+
+
 
  .job-details li::before {
   content: "\2022";
@@ -19,10 +22,10 @@
 .social-media i {
   border: solid 1px;
   border-radius: 50px;
-  background-color: gray;
+  background-color: white;
   padding: 15px;
   margin: 5px;
-  color: white;
+  color: black;
   height: 15px;
   width: 15px;
   text-align: center;
@@ -34,7 +37,8 @@ button .apply {
   margin-left: 80px
 }
 .social-media i:hover {
-  color: rgb(90, 184, 202)
+  color:white;
+  background-color:  rgb(90, 184, 202)
 }
 
 .FAQ {
