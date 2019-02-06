@@ -14,5 +14,7 @@ A frontend site for a career website that is made for job applicants.
 * React
 * CSS
 
+![View Demo](https://i.gyazo.com/e285561d5843d37abd28d79ec2e62495.gif)
+
 
 **You may visit the website here:** https://royal-mirage.netlify.com/
